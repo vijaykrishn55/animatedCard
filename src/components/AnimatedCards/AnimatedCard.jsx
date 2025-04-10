@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../card/card";
+import Card from "../Card/Card";
 import {data} from "../data/data";
 import "./AnimatedCard.css";
 
