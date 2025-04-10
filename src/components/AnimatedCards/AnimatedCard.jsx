@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "../Card/Card";
-import {Data} from "../Data/Data"
+import {Data} from "../Data/index"
 import "./AnimatedCard.css";
 
 function AnimatedCard() {
