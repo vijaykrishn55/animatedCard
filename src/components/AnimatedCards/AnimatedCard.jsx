@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "../Card/Card";
-import {data} from "../data/data";
+import {Data} from "../Data/Data"
 import "./AnimatedCard.css";
 
 function AnimatedCard() {
@@ -8,7 +8,7 @@ function AnimatedCard() {
   return (
     <>
       <div className="animated-card-container">
-        {data.map((item, index) => {
+        {Data.map((item, index) => {
           return (
             <Card
               key={index}

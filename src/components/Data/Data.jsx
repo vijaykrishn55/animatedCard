@@ -1,5 +1,5 @@
 
-const data=[
+const Data=[
         {header:"card 01 animated",
          content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link:"https://www.google.com",
