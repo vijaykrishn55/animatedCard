@@ -1,0 +1,15 @@
+.animated-card-container{
+        width: 100%;
+        position:relative;
+        height: 700px;
+        overflow-y: auto;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        scroll-behavior: smooth;
+        z-index: 1000;
+}
+.animated-card-container::-webkit-scrollbar {
+        display: none;
+}
