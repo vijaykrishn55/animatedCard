@@ -1,15 +1,28 @@
-.animated-card-container{
-        width: 100%;
-        position:relative;
-        height: 700px;
-        overflow-y: auto;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        scroll-behavior: smooth;
-        z-index: 1000;
+:root {
+  --cards: 4;
+  --cardHeight: 87vh;
+  --cardTopPadding: 1.5em;
 }
-.animated-card-container::-webkit-scrollbar {
-        display: none;
+
+.cards-container {
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  color: white;
+}
+
+.cards-container .card {
+  position: sticky;
+  top: 0;
+  padding-top:var(--cardTopPadding);
+  transition: all 0.5s;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
 }
