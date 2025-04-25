@@ -26,3 +26,57 @@
 .cards-container::-webkit-scrollbar {
   display: none;
 }
+
+/* Mobile responsive styles */
+@media (min-width: 450px) and (max-width: 770px) {
+  
+  .card{
+    width: 395px;
+    height: 300px;
+  }
+  .card-container{
+    width: 365px;
+    height: 275px;
+  }
+  .card-content{
+    font-size: 12px;
+    
+  }
+  
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+
+  .card{
+    width: 300px;
+    height: 200px;
+  }
+  .card-container{
+    width: 270px;
+    height: 175px;
+  }
+  .card-header{
+    margin: 0px;
+  }
+  .card-content{
+    font-size: 10px;
+    
+  }
+}
+@media (min-width: 200px) and (max-width: 320px){
+  .card{
+    width: 75%;
+    height: 170px;
+  }
+  .card-container{
+    width: 90%;
+    height: 145px;
+  }
+  .card-header{
+    margin: 0px;
+  }
+  .card-content{
+    font-size: 7px;
+  }
+  
+}
