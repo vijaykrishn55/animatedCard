@@ -1,5 +1,5 @@
 :root {
-  --cards: 4;
+  --cards: 5;
   --cardHeight: 87vh;
   --cardTopPadding: 1.5em;
 }
@@ -9,18 +9,26 @@
   margin: 0 auto;
   list-style: none;
   padding-left: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
   padding-bottom: calc(var(--cards) * var(--cardTopPadding));
   color: white;
 }
 
 .cards-container .card {
-  position: sticky;
-  top: 0;
   padding-top:var(--cardTopPadding);
   transition: all 0.5s;
+}
+
+.card:last-child {
+  z-index: 100000;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:last-child.sticky-top {
+  transform: translateY(-188px);
 }
 
 .cards-container::-webkit-scrollbar {
@@ -46,7 +54,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
-
+  :root{
+    --cards:11;
+  }
   .card{
     width: 300px;
     height: 200px;
